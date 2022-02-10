@@ -1,0 +1,45 @@
+.layout {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  .navigation {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    padding: 0px 5vw;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .main {
+    width: 100%;
+    display: flex;
+    padding-top: 5vh;
+    align-items: center;
+    flex-direction: column;
+
+    .figure1 {
+      left: 5vw;
+      bottom: 0vh;
+      height: 65vh;
+      position: fixed;
+    }
+
+    .figure2 {
+      right: 5vw;
+      bottom: 0px;
+      position: fixed;
+    }
+  }
+}
+
+@media Only screen and (max-width: 1040px) {
+  .layout {
+    .main {
+      .figure1 {
+        left: -5vw;
+      }
+    }
+  }
+}

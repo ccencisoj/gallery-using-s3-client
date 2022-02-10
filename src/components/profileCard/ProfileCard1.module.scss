@@ -1,0 +1,126 @@
+.profile_card {
+  width: 800px;
+  display: flex;
+  border-radius: 5px;
+  padding: 24px 32px;
+  box-sizing: border-box;
+  background-color: #fff;
+
+  .image {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .column {
+    flex: 1;
+    display: flex;
+    margin-left: 32px;
+    flex-direction: column;
+
+    .username {
+      font-size: 20px;
+    }
+
+    .information {
+      gap: 32px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 24px;
+
+      .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+
+        .label {
+          font-size: 14px;
+          font-weight: 600;
+        }
+
+        .value {
+          font-size: 14px;
+          margin-right: 4px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media Only screen and (max-width: 850px) {
+  .profile_card {
+    width: 90%;
+
+    .column {
+      .information {
+        gap: 24px;
+      }
+    }
+  }
+}
+
+.profile_card_mobile {
+  width: 90%;
+  display: flex;
+  padding: 24px 24px;
+  border-radius: 5px;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #fff;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+
+    .image {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  
+    .column {
+      flex: 1;
+      display: flex;
+      margin-left: 32px;
+      flex-direction: column;
+  
+      .username {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .information {
+    width: 100%;
+    display: flex;
+    padding-top: 32px;
+    flex-direction: row;
+
+    .container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+
+      .label {
+        font-size: 0.9em;
+        text-transform: capitalize;
+      }
+
+      .value {
+        font-size: 1.4em;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media Only screen and (max-width: 440px) {
+  .profile_card_mobile {
+    font-size: 80%;
+  }
+}

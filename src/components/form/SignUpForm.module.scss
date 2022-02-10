@@ -1,0 +1,66 @@
+.sign_up_form {
+  width: 500px;
+  border-radius: 5px;
+  padding: 48px 48px;
+  box-sizing: border-box;
+  background-color: #fff;
+  
+  .header {
+    width: 100%;
+    display: flex;
+    margin-bottom: 12px;
+    flex-direction: column;
+
+    .title {
+      width: 100%;
+      font-weight: 600;
+      font-size: 0.85em;
+      text-transform: uppercase;
+      color: var(--primary-color);
+    }
+
+    .description {
+      width: 100%;
+      font-size: 1.8em;
+      font-weight: 600;
+    }
+    
+    .error {
+      color: #f00;
+      font-size: 12px;
+    }
+
+    .error::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .container {
+      gap: 12px;
+      width: 100%;
+      display: flex;
+      padding: 12px 0px;
+      flex-direction: column;
+    }
+  }
+}
+
+@media Only screen and (max-width: 550px) {
+  .sign_up_form {
+    width: 95%;
+    font-size: 90%;
+    padding: 32px 32px;
+  }
+}
+
+@media Only screen and (max-width: 400px) {
+  .sign_up_form {
+    font-size: 80%;
+    padding: 24px 24px;
+  }
+}

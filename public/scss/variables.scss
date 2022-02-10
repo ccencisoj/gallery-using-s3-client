@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #125;
+  --primary-color-hover: #125c;
+  --primary-color-active: #125;
+  --secundary-color-hover: #1251;
+  --secundary-color-active: #1253;
+}
+
+@media Only screen and (max-width: 900px) {
+  :root {
+    --primary-color-hover: #125;
+    --primary-color-active: #125c;
+  }
+}

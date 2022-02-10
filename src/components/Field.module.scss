@@ -1,0 +1,75 @@
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  .input {
+    width: 100%;
+    height: 64px;
+    font-size: 14px;
+    padding: 0px 12px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 2px #e5e5ee solid;
+  }
+
+  .input:focus {
+    border: 2px var(--primary-color) solid;
+  }
+
+  .error {
+    width: 100%;
+    color: #f00;
+    font-size: 12px;
+  }
+
+  .error::first-letter {
+    text-transform: uppercase;
+  }
+
+  .actions {
+    right: 12px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+
+    .action {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        color: #999;
+      }
+    }
+
+    .actived_action {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        color: #000;
+      }
+    }
+
+    .action:hover, .actived_action:hover {
+      background-color: #f1f1ff;
+    }
+
+    .action:active, .actived_action:active {
+      background-color: #e5e5ee;
+    }
+  }
+}

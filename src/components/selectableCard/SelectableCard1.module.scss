@@ -1,0 +1,21 @@
+.selectable_card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  .label {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 16px 16px;
+    box-sizing: border-box;
+  }
+}
+
+.selectable_card:hover {
+  background-color: #f5f5ff;
+}
+
+.selectable_card:active {
+  background-color: #e5e5ee;
+}

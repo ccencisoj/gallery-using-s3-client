@@ -1,0 +1,90 @@
+.post_card {
+  --border-radius: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+
+  .header {
+    width: 100%;
+    display: flex;
+    padding: 24px 24px;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+
+    .actions {
+      gap: 32px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+    
+    .creator {
+      width: 100%;
+      display: flex;
+      box-sizing: border-box;
+      border-top-left-radius: var(--border-radius);
+      border-top-right-radius: var(--border-radius);
+  
+      .image {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+  
+      .column {
+        display: flex;
+        margin-left: 16px;
+        flex-direction: column;
+  
+        .name {
+          font-weight: 600;
+        }
+  
+        .userType {
+          color: #999;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .main {
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 1/0.5;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media Only screen and (max-width: 640px) {
+  .post_card {
+    --border-radius: 5px;
+    font-size: 90%;
+
+    .header {
+      padding: 12px 12px;
+
+      .creator {
+        .image {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    .main {
+      aspect-ratio: 1/0.8;
+    }
+  }
+}

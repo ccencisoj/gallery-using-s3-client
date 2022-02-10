@@ -1,0 +1,16 @@
+.post_list {
+  gap: 32px;
+  width: 800px;
+  display: flex;
+  margin: 0px auto;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+@media Only screen and (max-width: 850px){
+  .post_list {
+    width: 100%;
+    padding: 0px 24px;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,63 @@
+.notification_card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px #e5e5ee solid;
+  
+  .container {
+    width: calc(100% - 24px);
+    display: flex;
+    height: 100%;  
+    padding: 24px 24px;
+    box-sizing: border-box;
+
+    .image {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+    }
+  
+    .column {
+      width: 100%;
+      display: flex;
+      padding: 0px 12px;
+      box-sizing: border-box;
+      flex-direction: column;
+  
+      .value {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+      }
+  
+      .date {
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .ball {
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    justify-self: center;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--primary-color);
+  }
+}
+
+.notification_card:hover {
+  background-color: #f5f5ff;
+}
+
+.notification_card:active {
+  background-color: #e5e5ee;
+}
+
+.notification_card_mobile {
+  .ball {
+    right: 32px;
+  }
+}
